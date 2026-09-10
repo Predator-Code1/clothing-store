@@ -1,0 +1,23 @@
+body { background-color: #F5F6F8; color: #333333 }
+body {font-family: 'Montserrat', sans-serif;}
+body {padding: 120px;}
+.products-grid {display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.extra-photo {display: none;}
+img:hover {transform: scale(1.05);}
+img {transition: transform 0.5s;}
+.reveal {opacity: 0; transition: opacity 0.6s;}
+.visible {opacity: 1;}
+.about-block {background-color: #333333; color: white; margin-left: -120px; margin-right: -120px; margin-bottom: -120px; padding: 20px;}
+.about-content.open {max-height: 2000px;}
+.about-content {max-height: 0 ; overflow: hidden; transition: max-height 0.6s ease;}
+.accordion-header {font-size: 15px;}
+
+.modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 10; justify-content: center; align-items: center; }
+.modal-overlay.open { display: flex; }
+.modal-box { background-color: white; color: #333333; padding: 40px; max-width: 500px; position: relative; }
+.modal-close { position: absolute; top: 10px; right: 20px; cursor: pointer; font-size: 24px; }
+.modal-carousel { display: flex; align-items: center; justify-content: space-between; }
+.modal-photo { display: none; width: 300px; }
+.modal-photo.active-photo { display: block; }
+.carousel-arrow { cursor: pointer; font-size: 24px; padding: 0 10px; }
+.modal-order-btn { display: inline-block; margin-top: 20px; background-color: #FFD700; color: #333333; padding: 10px 20px; text-decoration: none; }
